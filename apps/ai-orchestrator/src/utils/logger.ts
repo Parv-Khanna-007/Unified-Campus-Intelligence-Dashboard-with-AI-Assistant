@@ -1,3 +1,4 @@
+declare const process: any;
 import winston from 'winston';
 import morgan from 'morgan';
 
