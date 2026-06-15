@@ -346,7 +346,7 @@ export default function AIAssistantPage() {
 
     try {
       // Connect to AI Orchestrator SSE Streaming endpoint
-      const response = await fetch('http://localhost:3010/api/orchestrate', {
+      const response = await fetch('https://ai-orchestrator-a2yg.onrender.com/api/orchestrate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
