@@ -136,7 +136,7 @@ export default function AdminConsolePage() {
     setErrorMsg(null);
 
     try {
-      const res = await fetch('http://localhost:3010/api/admin/books', {
+      const res = await fetch('https://ai-orchestrator-a2yg.onrender.com/api/admin/books', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -172,7 +172,7 @@ export default function AdminConsolePage() {
   const handleDeleteBook = async (isbn: string) => {
     setErrorMsg(null);
     try {
-      const res = await fetch(`http://localhost:3010/api/admin/books/${isbn}`, {
+      const res = await fetch(`https://ai-orchestrator-a2yg.onrender.com/api/admin/books/${isbn}`, {
         method: 'DELETE',
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -199,7 +199,7 @@ export default function AdminConsolePage() {
       : [];
 
     try {
-      const res = await fetch('http://localhost:3010/api/admin/menu', {
+      const res = await fetch('https://ai-orchestrator-a2yg.onrender.com/api/admin/menu', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -243,7 +243,7 @@ export default function AdminConsolePage() {
     setErrorMsg(null);
 
     try {
-      const res = await fetch('http://localhost:3010/api/admin/events', {
+      const res = await fetch('https://ai-orchestrator-a2yg.onrender.com/api/admin/events', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -279,7 +279,7 @@ export default function AdminConsolePage() {
   const handleDeleteEvent = async (id: string) => {
     setErrorMsg(null);
     try {
-      const res = await fetch(`http://localhost:3010/api/admin/events/${id}`, {
+      const res = await fetch(`https://ai-orchestrator-a2yg.onrender.com/api/admin/events/${id}`, {
         method: 'DELETE',
         headers: { Authorization: `Bearer ${token}` },
       });
