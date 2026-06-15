@@ -75,7 +75,9 @@ mcpService.connectAll();
 const JWT_SECRET = process.env.JWT_SECRET || 'campus-intelligence-secret-key-2026';
 
 // Extend express Request interface locally
-export interface AuthenticatedRequest extends express.Request {
+import { Request } from 'express';
+
+export interface AuthenticatedRequest extends Request {
   user?: {
     username: string;
     role: 'student' | 'admin';
