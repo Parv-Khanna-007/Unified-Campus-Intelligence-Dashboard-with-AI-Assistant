@@ -41,7 +41,7 @@ const initialServers: MCPServer[] = [
   {
     id: '1',
     name: 'Campus Operations MCP',
-    url: 'http://localhost:3001/mcp',
+    url: 'https://ai-orchestrator-a2yg.onrender.com/mcp',
     status: 'online',
     latency: 12,
     uptime: '99.98%',
@@ -56,7 +56,7 @@ const initialServers: MCPServer[] = [
   {
     id: '2',
     name: 'Academic Registrar MCP',
-    url: 'http://localhost:3002/mcp',
+    url: 'https://ai-orchestrator-a2yg.onrender.com/mcp',
     status: 'online',
     latency: 8,
     uptime: '99.95%',
@@ -70,7 +70,7 @@ const initialServers: MCPServer[] = [
   {
     id: '3',
     name: 'Facilities Telemetry MCP',
-    url: 'http://localhost:3003/mcp',
+    url: 'https://ai-orchestrator-a2yg.onrender.com/mcp',
     status: 'online',
     latency: 19,
     uptime: '99.99%',
@@ -84,7 +84,7 @@ const initialServers: MCPServer[] = [
   {
     id: '4',
     name: 'Library Systems MCP',
-    url: 'http://localhost:3004/mcp',
+    url: 'https://ai-orchestrator-a2yg.onrender.com/mcp',
     status: 'offline',
     latency: 0,
     uptime: '94.22%',
