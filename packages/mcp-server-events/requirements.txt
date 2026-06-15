@@ -1,4 +1,4 @@
 fastapi>=0.110.0
-mcp[cli]>=0.6.0
+mcp[cli]==1.9.4
 uvicorn>=0.28.0
 pydantic>=2.0.0
