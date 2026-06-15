@@ -2,7 +2,8 @@
 
 An enterprise-grade, full-stack campus operations platform powered by **Gemini 2.5 Flash** and the **Model Context Protocol (MCP)**. This system serves as a central orchestrator connecting a Next.js frontend dashboard with multiple decentralized FastAPI MCP resource nodes (Library, Cafeteria, Events, and Academics with RAG support).
 
-## Here is the screen recording link on drive : https://drive.google.com/file/d/1zVHCiMYeAcjdDxQJxNN_NfmgvLdR9cYC/view?usp=sharing
+# Screen recording link on drive: 
+https://drive.google.com/file/d/1zVHCiMYeAcjdDxQJxNN_NfmgvLdR9cYC/view?usp=sharing
 
 ---
 
