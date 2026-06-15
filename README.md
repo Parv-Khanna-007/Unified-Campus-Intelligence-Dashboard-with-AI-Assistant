@@ -4,7 +4,7 @@ An enterprise-grade, full-stack campus operations platform powered by **Gemini 2
 
 ---
 
-## 🛠️ Architecture Overview
+## Architecture Overview
 
 The monorepo workspace is organized as follows:
 
@@ -34,7 +34,7 @@ Folder for project/
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 ### 1. ChatGPT-Style Chat Interface
 * **SSE Stream Processing**: Streams generated tokens to the UI in real-time.
@@ -73,7 +73,7 @@ Folder for project/
 
 ---
 
-## ⚙️ Setup & Installation
+## Setup & Installation
 
 ### Prerequisites
 * Node.js v18+ & npm v10+
@@ -127,7 +127,7 @@ cd apps/dashboard && npm run dev
 
 ---
 
-## 🔍 Verification & Telemetry
+## Verification & Telemetry
 
 * **Next.js Dashboard**: Access at `http://localhost:3000`
 * **Express Microservice API**: Access at `http://localhost:3010`
@@ -136,7 +136,7 @@ cd apps/dashboard && npm run dev
 
 ---
 
-## 🌐 Deployment Guidelines
+## Deployment Guidelines
 
 ### 1. Next.js Dashboard Frontend
 Deploy to **Vercel** or host on a Node.js server using PM2:
