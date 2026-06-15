@@ -92,19 +92,19 @@ export default function AdminConsolePage() {
     setErrorMsg(null);
     try {
       // Fetch books
-      const bRes = await fetch('http://localhost:8001/books');
+      const bRes = await fetch('https://ai-orchestrator-a2yg.onrender.com/books');
       if (bRes.ok) setBooks(await bRes.json());
 
       // Fetch menu
-      const cRes = await fetch('http://localhost:8002/menu');
+      const cRes = await fetch('https://ai-orchestrator-a2yg.onrender.com/menu');
       if (cRes.ok) setCafeterias(await cRes.json());
 
       // Fetch events
-      const eRes = await fetch('http://localhost:8003/events');
+      const eRes = await fetch('https://ai-orchestrator-a2yg.onrender.com/events');
       if (eRes.ok) setEvents(await eRes.json());
 
       // Fetch handbooks
-      const hRes = await fetch('http://localhost:8004/documents');
+      const hRes = await fetch('https://ai-orchestrator-a2yg.onrender.com/documents');
       if (hRes.ok) setHandbooks(await hRes.json());
     } catch (err: any) {
       console.error(err);
@@ -310,7 +310,7 @@ export default function AdminConsolePage() {
 
     try {
       setUploadStatus('Extracting pages & generating embeddings...');
-      const response = await fetch('http://localhost:8004/upload-pdf', {
+      const response = await fetch('https://ai-orchestrator-a2yg.onrender.com/upload-pdf', {
         method: 'POST',
         body: formData,
       });
@@ -333,7 +333,7 @@ export default function AdminConsolePage() {
 
   const handleDeleteHandbook = async (id: number) => {
     try {
-      const res = await fetch(`http://localhost:8004/documents/${id}`, {
+      const res = await fetch(`https://ai-orchestrator-a2yg.onrender.com/documents/${id}`, {
         method: 'DELETE',
       });
       if (!res.ok) throw new Error('Failed to delete document');
@@ -348,7 +348,7 @@ export default function AdminConsolePage() {
     setIsSubmitting(true);
     setErrorMsg(null);
     try {
-      const res = await fetch('http://localhost:8004/preload-sample', {
+      const res = await fetch('https://ai-orchestrator-a2yg.onrender.com/preload-sample', {
         method: 'POST',
       });
       if (!res.ok) throw new Error('Failed to preload sample handbook');
