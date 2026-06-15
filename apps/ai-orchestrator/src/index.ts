@@ -77,12 +77,7 @@ const JWT_SECRET = process.env.JWT_SECRET || 'campus-intelligence-secret-key-202
 // Extend express Request interface locally
 import { Request } from 'express';
 
-export interface AuthenticatedRequest extends Request {
-  user?: {
-    username: string;
-    role: 'student' | 'admin';
-  };
-}
+type AuthenticatedRequest = any;
 
 // Authentication middleware
 const authenticateJWT = (req: AuthenticatedRequest, res: express.Response, next: express.NextFunction) => {
