@@ -35,11 +35,14 @@ export default function LoginPage() {
     setErrorMsg(null);
 
     try {
-      const res = await fetch('http://localhost:3010/api/auth/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ username, password }),
-      });
+      const res = await fetch(
+  'https://ai-orchestrator-a2yg.onrender.com/api/auth/login',
+  {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ username, password }),
+  }
+);
 
       if (!res.ok) {
         const data = await res.json();
