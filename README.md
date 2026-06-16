@@ -27,6 +27,8 @@ Frontend Dashboard (Vercel): https://unified-campus-intelligence-dashboa-omega.v
 
 Backend Orchestrator (Render): https://ai-orchestrator-a2yg.onrender.com
 
+(outside person will not be able to access it)
+
 API Health Endpoint: https://ai-orchestrator-a2yg.onrender.com/health
 
 ## Deployed Services
