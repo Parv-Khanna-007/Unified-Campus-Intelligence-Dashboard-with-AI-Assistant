@@ -1,8 +1,6 @@
 # Unified Campus Intelligence System
 
-## Author
-
-Parv Khanna 23112070
+## Author: Parv Khanna 23112070
 
 
 An enterprise-grade, full-stack campus operations platform powered by **Gemini 2.5 Flash** and the **Model Context Protocol (MCP)**. This system serves as a central orchestrator connecting a Next.js frontend dashboard with multiple decentralized FastAPI MCP resource nodes (Library, Cafeteria, Events, and Academics with RAG support).
