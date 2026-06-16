@@ -41,7 +41,7 @@ const initialServers: MCPServer[] = [
   {
     id: '1',
     name: 'Campus Operations MCP',
-    url: 'https://ai-orchestrator-a2yg.onrender.com/mcp',
+    url: '',
     status: 'online',
     latency: 12,
     uptime: '99.98%',
@@ -56,7 +56,7 @@ const initialServers: MCPServer[] = [
   {
     id: '2',
     name: 'Academic Registrar MCP',
-    url: 'https://ai-orchestrator-a2yg.onrender.com/mcp',
+    url: '',
     status: 'online',
     latency: 8,
     uptime: '99.95%',
@@ -70,7 +70,7 @@ const initialServers: MCPServer[] = [
   {
     id: '3',
     name: 'Facilities Telemetry MCP',
-    url: 'https://ai-orchestrator-a2yg.onrender.com/mcp',
+    url: '',
     status: 'online',
     latency: 19,
     uptime: '99.99%',
@@ -84,12 +84,12 @@ const initialServers: MCPServer[] = [
   {
     id: '4',
     name: 'Library Systems MCP',
-    url: 'https://ai-orchestrator-a2yg.onrender.com/mcp',
-    status: 'offline',
-    latency: 0,
+    url: '',
+    status: 'online',
+    latency: 7,
     uptime: '94.22%',
     toolsCount: 1,
-    latencyHistory: [{ ms: 0 }, { ms: 0 }, { ms: 0 }, { ms: 0 }, { ms: 0 }, { ms: 0 }, { ms: 0 }],
+    latencyHistory: [{ ms: 17 }, { ms: 21 }, { ms: 15 }, { ms: 24 }, { ms: 19 }, { ms: 20 }, { ms: 25 }],
     tools: [
       { name: 'getOccupancyCounter', desc: 'Query live student turnaround data from Turnstile APIs.', schema: '{"gateId: string"}' },
     ],
@@ -234,7 +234,7 @@ export default function MCPMonitorPage() {
             </CardHeader>
 
             <CardContent className="flex-grow p-4 space-y-4">
-              {selectedServer?.status === 'offline' ? (
+              {selectedServer?.status === 'online' ? (
                 <div className="flex flex-col items-center justify-center py-12 text-center">
                   <Database className="h-10 w-10 text-muted-foreground opacity-30 mb-2" />
                   <p className="text-xs font-bold text-foreground">Server Offline</p>
