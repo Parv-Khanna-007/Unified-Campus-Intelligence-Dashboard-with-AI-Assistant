@@ -3,8 +3,27 @@
 An enterprise-grade, full-stack campus operations platform powered by **Gemini 2.5 Flash** and the **Model Context Protocol (MCP)**. This system serves as a central orchestrator connecting a Next.js frontend dashboard with multiple decentralized FastAPI MCP resource nodes (Library, Cafeteria, Events, and Academics with RAG support).
 
 ---
+
+## Live Deployment
+Frontend Dashboard (Vercel): https://unified-campus-intelligence-dashboa-omega.vercel.app
+Backend Orchestrator (Render): https://ai-orchestrator-a2yg.onrender.com
+API Health Endpoint: https://ai-orchestrator-a2yg.onrender.com/health
+
+## Hosted url: https://unified-campus-intelligence-dashboa-omega.vercel.app
+Admin username : admin
+Admin password : admin
+Student username : student
+Student password : student
+
 ## Screen recording link on drive: 
 https://drive.google.com/file/d/1zVHCiMYeAcjdDxQJxNN_NfmgvLdR9cYC/view?usp=sharing
+
+## Deployed Services
+AI Orchestrator: https://ai-orchestrator-a2yg.onrender.com
+Library MCP Service: https://library-map.onrender.com
+Cafeteria MCP Service: https://cafeteria-mcp-wz2g.onrender.com
+Events MCP Service: https://events-mcp-pp71.onrender.com
+Academics MCP Service: https://academics-mcp-ebqc.onrender.com
 
 ## Architecture Overview
 
@@ -12,26 +31,26 @@ The monorepo workspace is organized as follows:
 
 ```
 Folder for project/
-├── package.json                   # Monorepo workspaces configuration
-├── TSConfig.json                  # Root TypeScript configurations
-├── turbo.json                     # Turborepo task pipeline management
-├── start-all.js                   # Unified operations startup script
+├── package.json                  
+├── TSConfig.json                 
+├── turbo.json                     
+├── start-all.js                   
 │
 ├── apps/
-│   ├── dashboard/                 # Next.js 15 App Router Frontend (Port 3000)
-│   │   ├── src/app/               # Pages: Overview, Assistant, Monitor, Analytics, Settings, Admin
-│   │   └── src/components/        # Reusable UI widgets & React ErrorBoundary
+│   ├── dashboard/                 
+│   │   ├── src/app/               
+│   │   └── src/components/        
 │   │
-│   └── ai-orchestrator/           # Node.js + Express microservice broker (Port 3010)
+│   └── ai-orchestrator/          
 │       └── src/
-│           ├── index.ts           # Telemetry, Rate Limits, JWT Auth, Swagger Specs & Routing
-│           └── services/          # MCP SSE transports & Gemini API tool calls manager
+│           ├── index.ts           
+│           └── services/          
 │
-└── packages/                      # FastAPI Python MCP Servers
-    ├── mcp-server-library/        # Library search and book checkouts (Port 8001)
-    ├── mcp-server-cafeteria/      # Cafeteria today/weekly menu query tools (Port 8002)
-    ├── mcp-server-events/         # Upcoming and search events tools (Port 8003)
-    └── mcp-server-academics/      # Academics registry & SQLite RAG vector store (Port 8004)
+└── packages/                      
+    ├── mcp-server-library/       
+    ├── mcp-server-cafeteria/      
+    ├── mcp-server-events/         
+    └── mcp-server-academics/     
 ```
 
 ---
