@@ -136,7 +136,7 @@ export default function AdminConsolePage() {
     setErrorMsg(null);
 
     try {
-      const res = await fetch('https://ai-orchestrator-a2yg.onrender.com/api/admin/books', {
+      const res = await fetch('https://library-map.onrender.com/books', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -172,7 +172,7 @@ export default function AdminConsolePage() {
   const handleDeleteBook = async (isbn: string) => {
     setErrorMsg(null);
     try {
-      const res = await fetch(`https://ai-orchestrator-a2yg.onrender.com/api/admin/books/${isbn}`, {
+      const res = await fetch(`https://library-map.onrender.com/books/${isbn}`, {
         method: 'DELETE',
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -199,7 +199,7 @@ export default function AdminConsolePage() {
       : [];
 
     try {
-      const res = await fetch('https://ai-orchestrator-a2yg.onrender.com/api/admin/menu', {
+      const res = await fetch('https://cafeteria-mcp-wz2g.onrender.com/menu', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -243,7 +243,7 @@ export default function AdminConsolePage() {
     setErrorMsg(null);
 
     try {
-      const res = await fetch('https://ai-orchestrator-a2yg.onrender.com/api/admin/events', {
+      const res = await fetch('https://events-mcp-pp71.onrender.com/events', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -279,7 +279,7 @@ export default function AdminConsolePage() {
   const handleDeleteEvent = async (id: string) => {
     setErrorMsg(null);
     try {
-      const res = await fetch(`https://ai-orchestrator-a2yg.onrender.com/api/admin/events/${id}`, {
+      const res = await fetch(`https://events-mcp-pp71.onrender.com/events/${id}`, {
         method: 'DELETE',
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -310,7 +310,7 @@ export default function AdminConsolePage() {
 
     try {
       setUploadStatus('Extracting pages & generating embeddings...');
-      const response = await fetch('https://ai-orchestrator-a2yg.onrender.com/upload-pdf', {
+      const response = await fetch('https://academics-mcp-ebqc.onrender.com/upload-pdf', {
         method: 'POST',
         body: formData,
       });
@@ -333,7 +333,7 @@ export default function AdminConsolePage() {
 
   const handleDeleteHandbook = async (id: number) => {
     try {
-      const res = await fetch(`https://ai-orchestrator-a2yg.onrender.com/documents/${id}`, {
+      const res = await fetch(`https://academics-mcp-ebqc.onrender.com/documents/${id}`, {
         method: 'DELETE',
       });
       if (!res.ok) throw new Error('Failed to delete document');
@@ -348,7 +348,7 @@ export default function AdminConsolePage() {
     setIsSubmitting(true);
     setErrorMsg(null);
     try {
-      const res = await fetch('https://ai-orchestrator-a2yg.onrender.com/preload-sample', {
+      const res = await fetch('https://academics-mcp-ebqc.onrender.com/preload-sample', {
         method: 'POST',
       });
       if (!res.ok) throw new Error('Failed to preload sample handbook');
