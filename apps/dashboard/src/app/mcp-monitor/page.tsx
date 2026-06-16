@@ -234,7 +234,7 @@ export default function MCPMonitorPage() {
             </CardHeader>
 
             <CardContent className="flex-grow p-4 space-y-4">
-              {selectedServer?.status === 'online' ? (
+              {selectedServer?.status === 'offline' ? (
                 <div className="flex flex-col items-center justify-center py-12 text-center">
                   <Database className="h-10 w-10 text-muted-foreground opacity-30 mb-2" />
                   <p className="text-xs font-bold text-foreground">Server Offline</p>
