@@ -13,19 +13,29 @@ Backend Orchestrator (Render): https://ai-orchestrator-a2yg.onrender.com
 API Health Endpoint: https://ai-orchestrator-a2yg.onrender.com/health
 
 ## Hosted url: https://unified-campus-intelligence-dashboa-omega.vercel.app
+
 Admin username : admin
+
 Admin password : admin
+
 Student username : student
+
 Student password : student
+
 
 ## Screen recording link on drive: 
 https://drive.google.com/file/d/1zVHCiMYeAcjdDxQJxNN_NfmgvLdR9cYC/view?usp=sharing
 
 ## Deployed Services
+
 AI Orchestrator: https://ai-orchestrator-a2yg.onrender.com
+
 Library MCP Service: https://library-map.onrender.com
+
 Cafeteria MCP Service: https://cafeteria-mcp-wz2g.onrender.com
+
 Events MCP Service: https://events-mcp-pp71.onrender.com
+
 Academics MCP Service: https://academics-mcp-ebqc.onrender.com
 
 ## Architecture Overview
