@@ -48,28 +48,28 @@ export default function SettingsPage() {
     {
   id: '1',
   name: 'Library MCP',
-  url: 'https://ai-orchestrator-a2yg.onrender.com',
+  url: 'https://library-map.onrender.com',
   status: 'active',
   latency: 0
 },
 {
   id: '2',
   name: 'Cafeteria MCP',
-  url: 'https://ai-orchestrator-a2yg.onrender.com',
+  url: 'https://cafeteria-mcp-wz2g.onrender.com',
   status: 'active',
   latency: 0
 },
 {
   id: '3',
   name: 'Events MCP',
-  url: 'https://ai-orchestrator-a2yg.onrender.com',
+  url: 'https://events-mcp-pp71.onrender.com',
   status: 'active',
   latency: 0
 },
 {
   id: '4',
   name: 'Academics MCP',
-  url: 'https://ai-orchestrator-a2yg.onrender.com',
+  url: 'https://academics-mcp-ebqc.onrender.com',
   status: 'active',
   latency: 0
 },
