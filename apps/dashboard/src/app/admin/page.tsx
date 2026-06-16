@@ -92,19 +92,19 @@ export default function AdminConsolePage() {
     setErrorMsg(null);
     try {
       // Fetch books
-      const bRes = await fetch('https://library-map.onrender.com');
+      const bRes = await fetch('https://library-map.onrender.com/books');
       if (bRes.ok) setBooks(await bRes.json());
 
       // Fetch menu
-      const cRes = await fetch('https://cafeteria-mcp-wz2g.onrender.com');
+      const cRes = await fetch('https://cafeteria-mcp-wz2g.onrender.com/menu');
       if (cRes.ok) setCafeterias(await cRes.json());
 
       // Fetch events
-      const eRes = await fetch('https://events-mcp-pp71.onrender.com');
+      const eRes = await fetch('https://events-mcp-pp71.onrender.com/events');
       if (eRes.ok) setEvents(await eRes.json());
 
       // Fetch handbooks
-      const hRes = await fetch('https://academics-mcp-ebqc.onrender.com');
+      const hRes = await fetch('https://academics-mcp-ebqc.onrender.com/documents');
       if (hRes.ok) setHandbooks(await hRes.json());
     } catch (err: any) {
       console.error(err);
