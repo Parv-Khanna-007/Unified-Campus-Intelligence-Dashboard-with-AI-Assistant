@@ -45,10 +45,26 @@ export default function SettingsPage() {
   });
 
   const [endpoints, setEndpoints] = React.useState<MCPEndpoint[]>([
-    { id: '1', name: 'Library MCP', url: 'http://localhost:8001/mcp/sse', status: 'active', latency: 42 },
-    { id: '2', name: 'Cafeteria MCP', url: 'http://localhost:8002/mcp/sse', status: 'active', latency: 29 },
-    { id: '3', name: 'Events MCP', url: 'http://localhost:8003/mcp/sse', status: 'active', latency: 48 },
-    { id: '4', name: 'Academics MCP', url: 'http://localhost:8004/mcp/sse', status: 'active', latency: 54 },
+    {
+  id: '1',
+  name: 'Library MCP',
+  url: 'https://ai-orchestrator-a2yg.onrender.com'
+},
+{
+  id: '2',
+  name: 'Cafeteria MCP',
+  url: 'https://ai-orchestrator-a2yg.onrender.com'
+},
+{
+  id: '3',
+  name: 'Events MCP',
+  url: 'https://ai-orchestrator-a2yg.onrender.com'
+},
+{
+  id: '4',
+  name: 'Academics MCP',
+  url: 'https://ai-orchestrator-a2yg.onrender.com'
+},
   ]);
 
   const [isSaving, setIsSaving] = React.useState(false);
