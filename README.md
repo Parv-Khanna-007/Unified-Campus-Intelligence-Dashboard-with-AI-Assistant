@@ -24,7 +24,7 @@ Student password : student
 
 
 ## Screen recording link on drive: 
-https://drive.google.com/file/d/1zVHCiMYeAcjdDxQJxNN_NfmgvLdR9cYC/view?usp=sharing
+https://drive.google.com/file/d/1NqkVFiUimpV6CbBJwErZT-pUIoNoX0kr/view?usp=share_link
 
 ## Deployed Services
 
